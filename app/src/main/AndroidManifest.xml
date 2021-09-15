@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KotlinApk">
         <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LatihanActivity"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true" />
         <activity

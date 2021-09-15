@@ -4,7 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_24.xml" value="0.25052083333333336" />
+        <entry key="app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/ic_mail.xml" value="0.26614583333333336" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_latihan.xml" value="0.2203125" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/register.xml" value="0.1" />
       </map>
