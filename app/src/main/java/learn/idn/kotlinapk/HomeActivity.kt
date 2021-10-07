@@ -14,13 +14,20 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        val datasGambar = arrayOf("https://ds393qgzrxwzn.cloudfront.net/resize/m500x500/cat1/img/images/0/W4XMxSTwLd.jpg",
-                                  "https://ds393qgzrxwzn.cloudfront.net/resize/m500x500/cat1/img/images/0/W4XMxSTwLd.jpg")
-        val datasJudul = arrayOf("baju naruto anak", "baju naruto jepang")
-        val datasBuyer = arrayOf("3000","11000")
+        val datasGambar = arrayOf("https://cdn.pixabay.com/photo/2019/01/12/07/31/mornang-3928116_960_720.jpg",
+                                  "https://i.pinimg.com/originals/62/3a/a8/623aa8f9933ee9a286871bf6e0782538.jpg",
+                                   "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+                                  "https://img.freepik.com/free-vector/abstract-banner-background-with-red-shapes_1361-3348.jpg?size=626&ext=jpg",
+                                   "https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg",
+                                   "https://images.ctfassets.net/hrltx12pl8hq/58CIvG6Whv49bsmRbqaEZ6/e42a73d8ddef6f9c126fa49d384be678/6.jpg?fit=fill&w=480&h=270",
+                                   "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+                                    "https://cdn-icons-png.flaticon.com/512/149/149071.png")
+        val datasJudul = arrayOf("Umar andhika", "Arsyil", "Unknown", "nuno", "adhi", "lutpi", "dafi", "Isham")
+        val datasBuyer = arrayOf("yok belajar bareng lis","p", "nongskuy", "pppppp", "nqediqndqoindqonwdoqwdnqodnqnd", "hallo", "LIS sini lis", "biasalah")
+        val datasJam = arrayOf("30 Sep","29 Agu", "2 Sep", "12 Okt", "3 Des", "20 Jan", "1 Feb", "Baru Saja")
 
         val rvItem : RecyclerView = findViewById(R.id.rv_item)
-        rvItem.adapter = AdapterRecyclerView(this, datasGambar, datasJudul, datasBuyer)
+        rvItem.adapter = AdapterRecyclerView(this, datasGambar, datasJudul, datasBuyer, datasJam)
         rvItem.layoutManager = LinearLayoutManager(this)
         rvItem.setHasFixedSize(true)
 

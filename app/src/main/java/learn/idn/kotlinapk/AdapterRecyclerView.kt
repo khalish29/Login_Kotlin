@@ -12,14 +12,16 @@ import com.bumptech.glide.Glide
 class AdapterRecyclerView(private val context: Context,
                           private val dataGambar: Array<String>,
                           private val dataJudul: Array<String>,
-                          private val dataBuyer: Array<String>) :
+                          private val dataBuyer: Array<String>,
+                          private val dataJam: Array<String>) :
     RecyclerView.Adapter<AdapterRecyclerView.ViewHolder>() {
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        val bindGambar: ImageView = view.findViewById(R.id.img)
-        val bindJudul: TextView = view.findViewById(R.id.judul)
-        val bindBuyer: TextView = view.findViewById(R.id.jml)
+        val bindGambar: ImageView = view.findViewById(R.id.imageview1)
+        val bindJudul: TextView = view.findViewById(R.id.textview)
+        val bindBuyer: TextView = view.findViewById(R.id.textview3)
+        val bindJam: TextView = view.findViewById(R.id.textview2)
     }
 
     // Create new views (invoked by the layout manager)
@@ -43,6 +45,7 @@ class AdapterRecyclerView(private val context: Context,
             .into(viewHolder.bindGambar); // untuk memberi tahu dimana gambar akan di muat
         viewHolder.bindJudul.text = dataJudul[position]
         viewHolder.bindBuyer.text = dataBuyer[position]
+        viewHolder.bindJam.text = dataJam[position]
     }
 
     // Return the size of your collection data (invoked by the layout manager)
